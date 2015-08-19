@@ -11,7 +11,7 @@ libvlc-dev libavformat-dev libavdevice-dev libswscale-dev \
 libavfilter-dev libx264-dev libav-tools mplayer mencoder wget
 WORKDIR /tmp 
 RUN wget http://downloads.sourceforge.net/project/ucsniff/ucsniff/ucsniff-3.2%20src/ucsniff-3.20.tar.gz
-RUN tar -xfvz ucsniff-3.20.tar.gz 
+RUN tar xfvz ucsniff-3.20.tar.gz 
 WORKDIR /tmp/ucsniff-3.20 
 RUN ./configure --enable-libvlc --enable-gui
 RUN make 
